@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamp Lab</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Encabezado / Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">hamp<span>lab</span></h1>
+      <nav>
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <div class="auth">
+        <a href="#login" class="btn login">Iniciar sesión</a>
+        <a href="signup.html" class="btn signup">Registrarse</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Principal -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Impulsamos el crecimiento de tu <span>startup</span></h2>
+        <p>Conectamos creatividad y tecnología para desarrollar soluciones visuales, audiovisuales y digitales que lleven tu negocio al siguiente nivel.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn primary">Comenzar</a>
+          <a href="#about" class="btn secondary">Más información</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="assets/img/persona.png" alt="Imagen principal" width="500" height="500"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="services" id="services">
+    <div class="container">
+      <h3>Nuestra Visión & Objetivo</h3>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">
+            <img src="assets/img/home.png" alt="Icono Diseño" width="40" height="40">
+          </div>
+          <h4>Diseño Gráfico</h4>
+          <p>Diseñamos piezas visuales creativas y funcionales que comunican tu marca de forma clara, profesional y atractiva para tu público objetivo.</p>
+          <a href="#contact" class="btn secondary">Más información</a>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="assets/img/video.png" alt="Icono Video" width="40" height="40">
+          </div>
+          <h4>Edición de Video</h4>
+          <p>Producimos y editamos contenido audiovisual de alto impacto para redes sociales, campañas publicitarias y presentaciones empresariales.</p>
+          <a href="#contact" class="btn secondary">Más información</a>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="assets/img/promotion.png" alt="Icono Marketing" width="40" height="40">
+          </div>
+          <h4>Marketing Digital</h4>
+          <p>Planificamos estrategias digitales centradas en resultados: posicionamiento SEO, campañas en redes sociales y gestión de anuncios online.</p>
+          <a href="#contact" class="btn secondary">Más información</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h3>Contáctanos</h3>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo" required />
+        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="btn primary">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hamp Lab. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

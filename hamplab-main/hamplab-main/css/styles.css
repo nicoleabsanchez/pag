@@ -1,0 +1,438 @@
+/* ===================== */
+/* Reset & Base Styles */
+/* ===================== */
+* {
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina rellenos por defecto */
+  box-sizing: border-box; /* Incluye borde y padding en el ancho total */
+  font-family: 'Segoe UI', sans-serif; /* Fuente base del sitio */
+}
+
+body {
+  background: #fff; /* Fondo blanco */
+  color: #1e293b; /* Color de texto oscuro */
+  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+
+.container {
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  margin: auto; /* Centra horizontalmente */
+  padding: 1rem; /* Espaciado interno alrededor del contenido */
+}
+
+/* ===================== */
+/* Navbar Styles         */
+/* ===================== */
+.navbar {
+  background: #fff; /* Fondo blanco para el navbar */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra suave inferior */
+  padding: 1rem 0; /* Espaciado vertical */
+}
+
+.navbar .container {
+  display: flex; /* Layout en línea horizontal */
+  justify-content: space-between; /* Espacio entre logo y enlaces */
+  align-items: center; /* Centrado vertical */
+}
+
+.logo {
+  font-size: 1.5rem; /* Tamaño grande para el logo */
+  font-weight: bold; /* Negrita para destacarlo */
+}
+
+.logo span {
+  color: #20b486; /* Color verde para parte del logo */
+}
+
+nav a {
+  margin: 0 1rem; /* Espaciado horizontal entre enlaces */
+  text-decoration: none; /* Quita subrayado */
+  color: #1e293b; /* Color de texto del enlace */
+  font-weight: 500; /* Peso medio del texto */
+}
+
+/* ===================== */
+/* Auth Buttons          */
+/* ===================== */
+.auth .btn {
+  margin-left: 0.5rem; /* Espacio entre botones */
+  padding: 0.6rem 1.2rem; /* Tamaño del botón */
+  border-radius: 6px; /* Bordes redondeados */
+  font-weight: 600; /* Texto en negrita */
+  text-decoration: none; /* Sin subrayado */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Efectos suaves */
+  display: inline-block; /* Comportamiento de bloque en línea */
+}
+
+.auth .login {
+  background-color: white; /* Fondo blanco */
+  border: 2px solid #20b486; /* Borde verde */
+  color: #20b486; /* Texto verde */
+}
+
+.auth .signup {
+  background-color: #20b486; /* Fondo verde */
+  border: 2px solid #20b486; /* Mismo color para borde */
+  color: white; /* Texto blanco */
+}
+
+.auth .btn:hover {
+  opacity: 0.9; /* Efecto de opacidad al pasar el cursor */
+}
+
+/* ===================== */
+/* Button Utilities      */
+/* ===================== */
+.btn, .btn:link, .btn:visited {
+  display: inline-block; /* Alineación horizontal */
+  padding: 0.6rem 1.2rem; /* Espaciado interno */
+  border-radius: 6px; /* Esquinas redondeadas */
+  border: none; /* Sin borde por defecto */
+  cursor: pointer; /* Cursor tipo botón */
+  font-weight: 600; /* Texto más grueso */
+  text-decoration: none; /* Quitar subrayado */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s, transform 0.2s ease; /* Transiciones suaves */
+}
+
+.btn.primary {
+  background-color: #20b486; /* Verde principal */
+  color: white; /* Texto blanco */
+}
+
+.btn.secondary {
+  background-color: white; /* Fondo blanco */
+  border: 2px solid #20b486; /* Borde verde */
+  color: #20b486; /* Texto verde */
+}
+
+.btn:hover {
+  opacity: 0.9; /* Ligera opacidad */
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño */
+}
+
+/* ===================== */
+/* Hero Section          */
+/* ===================== */
+.hero {
+  background: #f9fafb; /* Fondo gris claro */
+  padding: 3rem 0; /* Espaciado vertical amplio */
+}
+
+.hero-content {
+  display: flex; /* Layout horizontal */
+  justify-content: space-between; /* Separación entre texto e imagen */
+  align-items: center; /* Centrado vertical */
+  gap: 2rem; /* Espacio entre columnas */
+}
+
+.hero-text {
+  flex: 1; /* Ocupa el mismo espacio que la imagen */
+}
+
+.hero-text h2 {
+  font-size: 2.5rem; /* Título grande */
+  margin-bottom: 1rem; /* Espacio inferior */
+}
+
+.hero-text span {
+  color: #20b486; /* Color verde para destacar */
+}
+
+.hero-img img {
+  max-width: 100%; /* Escala al ancho máximo del contenedor */
+  border-radius: 1rem; /* Bordes redondeados */
+}
+
+/* ===================== */
+/* Services Section      */
+/* ===================== */
+.services {
+  background: white; /* Fondo blanco */
+  padding: 4rem 0; /* Espaciado amplio vertical */
+  text-align: center; /* Centrado de texto */
+}
+
+.cards {
+  display: flex; /* Flexbox horizontal */
+  justify-content: center; /* Centrado horizontal */
+  flex-wrap: wrap; /* Permite saltar de línea */
+  gap: 2rem; /* Espacio entre tarjetas */
+  margin-top: 2rem; /* Separación con el título */
+}
+
+.card {
+  background: #fff; /* Fondo blanco de tarjeta */
+  padding: 1.5rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Sombra suave */
+  width: 300px; /* Ancho fijo de cada tarjeta */
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Eleva ligeramente la tarjeta */
+}
+
+.card .icon {
+  margin-bottom: 1rem; /* Espacio debajo del ícono */
+}
+
+.card .icon img {
+  display: block; /* Muestra como bloque */
+  margin: 0 auto; /* Centrado horizontal */
+  width: 48px; /* Ancho fijo del ícono */
+  height: 48px; /* Alto fijo del ícono */
+  filter: grayscale(100%) contrast(100%); /* Estilo monocromático */
+}
+
+/* ===================== */
+/* Contact Section       */
+/* ===================== */
+.contact {
+  padding: 4rem 0; /* Espaciado vertical */
+  background: #f9fafb; /* Fondo gris claro */
+  text-align: center; /* Centrado del contenido */
+}
+
+.contact-form {
+  max-width: 500px; /* Ancho máximo del formulario */
+  margin: auto; /* Centrado horizontal */
+  display: flex; /* Layout vertical */
+  flex-direction: column; /* Apila los campos */
+  gap: 1rem; /* Espacio entre campos */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 6px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño legible */
+  width: 100%; /* Ocupa todo el ancho */
+}
+
+.contact-form textarea {
+  min-height: 120px; /* Altura mínima */
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* ===================== */
+/* Footer                */
+/* ===================== */
+.footer {
+  background: #1e293b; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  text-align: center; /* Centrado del texto */
+  padding: 1.5rem 0; /* Espaciado vertical */
+  font-size: 0.9rem; /* Tamaño pequeño */
+  margin-top: 2rem; /* Separación con contenido anterior */
+}
+
+/* ===================== */
+/* Login/Register Panels */
+/* ===================== */
+body.login-page {
+  display: flex; /* Usa flex para centrar en pantalla */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+.container.login {
+  display: flex; /* Layout en línea para los paneles */
+  width: 800px; /* Ancho total del formulario */
+  height: 500px; /* Altura fija del formulario */
+  border-radius: 12px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el desbordamiento */
+  background-color: white; /* Fondo blanco */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.left-panel {
+  width: 50%; /* Ocupa la mitad izquierda */
+  background-color: #20b486; /* Fondo verde */
+  color: white; /* Texto blanco */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Columnas */
+  align-items: center; /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  padding: 40px; /* Espaciado interno */
+  text-align: center; /* Centrado de texto */
+}
+
+.left-panel h2 {
+  font-size: 28px; /* Tamaño del título */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.left-panel p {
+  font-size: 14px; /* Tamaño del párrafo */
+  margin-bottom: 30px; /* Espaciado inferior */
+}
+
+.btn-outline {
+  background: transparent; /* Fondo transparente */
+  border: 2px solid white; /* Borde blanco */
+  color: white; /* Texto blanco */
+  padding: 10px 30px; /* Espaciado interno */
+  border-radius: 25px; /* Bordes muy redondeados */
+  cursor: pointer; /* Cursor tipo botón */
+  font-weight: bold; /* Negrita */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.btn-outline:hover {
+  background-color: white; /* Cambia a fondo blanco */
+  color: #20b486; /* Cambia texto a verde */
+}
+
+.right-panel {
+  width: 50%; /* Ocupa la mitad derecha */
+  padding: 40px; /* Espaciado interno */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Dirección vertical */
+  justify-content: center; /* Centrado vertical */
+  align-items: center; /* Centrado horizontal */
+}
+
+.right-panel h2 {
+  margin-bottom: 10px; /* Espaciado inferior */
+  color: #20b486; /* Verde institucional */
+}
+
+.social-icons {
+  display: flex; /* Alineación en fila */
+  gap: 10px; /* Espacio entre íconos */
+  margin: 10px 0; /* Espaciado vertical */
+}
+
+.social-icons img {
+  width: 30px; /* Tamaño de ícono */
+  height: 30px; /* Altura igual al ancho */
+}
+
+.small-text {
+  font-size: 12px; /* Texto pequeño */
+  color: gray; /* Color gris claro */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+form {
+  width: 100%; /* Ancho completo del panel */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Dirección vertical */
+  gap: 15px; /* Espacio entre campos */
+}
+
+form input {
+  padding: 12px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn.primary {
+  background-color: #20b486; /* Fondo verde */
+  color: white; /* Texto blanco */
+}
+
+.btn.secondary {
+  background-color: #20b486; /* Fondo verde institucional */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde para un diseño limpio */
+}
+
+
+/* ===================== */
+/* Catálogo de Productos */
+/* ===================== */
+.catalog {
+  background: #fff; /* Fondo blanco */
+  padding: 4rem 0; /* Espaciado vertical */
+  text-align: center; /* Centrado del texto */
+}
+
+.catalog h3 {
+  font-size: 2rem; /* Tamaño del subtítulo */
+  margin-bottom: 1rem; /* Espacio inferior */
+}
+
+.catalog .search-input {
+  padding: 0.8rem; /* Espaciado interno */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 400px; /* Limita ancho máximo */
+  margin: 1rem auto 2rem auto; /* Centrado con margen */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 6px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de texto */
+}
+
+.catalog .card .icon img {
+  display: block; /* Mostrar como bloque */
+  margin: 0 auto 1rem auto; /* Centrado y margen inferior */
+  width: 100%; /* Ocupa el ancho completo */
+  max-width: 200px; /* Limita tamaño */
+  height: auto; /* Escala proporcional */
+  object-fit: contain; /* Asegura que no se deforme */
+}
+
+.welcome-msg {
+  margin-right: 1rem; /* Separación del botón */
+  font-weight: 500; /* Texto semi-negrita */
+  color: #1e293b; /* Color de texto */
+}
+
+/* ===================== */
+/* Responsive            */
+/* ===================== */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+    text-align: center; /* Centra texto */
+  }
+
+  nav {
+    display: none; /* Oculta navegación */
+  }
+
+  .cards {
+    flex-direction: column; /* Tarjetas en columna */
+    align-items: center; /* Centrado horizontal */
+  }
+
+  .container.login {
+    flex-direction: column; /* Login apilado */
+    width: 90%; /* Ancho adaptado */
+    height: auto; /* Altura automática */
+    border-radius: 0; /* Sin bordes redondeados */
+    box-shadow: none; /* Sin sombra */
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%; /* Cada panel ocupa toda la pantalla */
+    padding: 2rem; /* Espaciado uniforme */
+  }
+
+  .left-panel {
+    border-bottom: 1px solid #e0e0e0; /* Línea divisoria */
+    border-radius: 0; /* Esquinas cuadradas */
+  }
+
+  .right-panel {
+    border-radius: 0; /* Esquinas cuadradas */
+  }
+
+  form {
+    width: 100%; /* Formulario ocupa todo el ancho */
+  }
+
+  .catalog .cards {
+    flex-direction: column; /* Catálogo apilado */
+    align-items: center; /* Centrado */
+  }
+
+  .catalog .card {
+    width: 90%; /* Tarjetas más anchas */
+  }
+}
